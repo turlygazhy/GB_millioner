@@ -46,6 +46,10 @@ class GameViewController: UIViewController {
 
 extension GameViewController: GameSessionDelegate {
     func didEndGame(withResult result: Int, win: Bool) {
+        let record = Record(data: Date(), score: result)
+        Game.instance.addRecord(record)
+        Game.instance.gameSession = nil
+        
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let resultVC = storyBoard.instantiateViewController(withIdentifier: "GameResultViewController") as! GameResultViewController
         resultVC.win = win

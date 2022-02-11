@@ -6,10 +6,19 @@
 //
 
 import Foundation
-//todo should be singleton
+
 class Game {
     
     static let instance = Game()
     
+    private var records: [Record] = []
+    
     var gameSession: GameSession?
+    
+    private init() {}
+    
+    func addRecord(_ record: Record) {
+        records.append(record)
+        try? GameCaretaker().saveRecords(records)
+    }
 }

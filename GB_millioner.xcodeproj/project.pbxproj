@@ -20,6 +20,8 @@
 		FB71682E27B5340400D9EA96 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = FB71682D27B5340400D9EA96 /* questions.json */; };
 		FB71683027B53CBF00D9EA96 /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71682F27B53CBF00D9EA96 /* DataUtil.swift */; };
 		FB71683327B60CFF00D9EA96 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */; };
+		FB71683527B67F5000D9EA96 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683427B67F5000D9EA96 /* Record.swift */; };
+		FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683627B6837400D9EA96 /* GameCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FB71682D27B5340400D9EA96 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		FB71682F27B53CBF00D9EA96 /* DataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUtil.swift; sourceTree = "<group>"; };
 		FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
+		FB71683427B67F5000D9EA96 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		FB71683627B6837400D9EA96 /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				FB71682227B5313F00D9EA96 /* Game.swift */,
 				FB71682427B5316300D9EA96 /* GameSession.swift */,
 				FB71682627B5331100D9EA96 /* Question.swift */,
+				FB71683427B67F5000D9EA96 /* Record.swift */,
+				FB71683627B6837400D9EA96 /* GameCaretaker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,7 +215,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB71682127B5307800D9EA96 /* GameViewController.swift in Sources */,
+				FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */,
 				FB71682327B5313F00D9EA96 /* Game.swift in Sources */,
+				FB71683527B67F5000D9EA96 /* Record.swift in Sources */,
 				FB71681127B52E5900D9EA96 /* ViewController.swift in Sources */,
 				FB71683027B53CBF00D9EA96 /* DataUtil.swift in Sources */,
 				FB71680D27B52E5900D9EA96 /* AppDelegate.swift in Sources */,
