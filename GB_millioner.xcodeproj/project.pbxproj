@@ -25,6 +25,8 @@
 		FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */; };
 		FB71683F27B8CBE300D9EA96 /* QuestionOrderStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */; };
 		FB71684127B8D07800D9EA96 /* QuestionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684027B8D07800D9EA96 /* QuestionOrder.swift */; };
+		FB71684327B8D54200D9EA96 /* QuestionShuffledStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684227B8D54200D9EA96 /* QuestionShuffledStrategy.swift */; };
+		FB71684527B8D55100D9EA96 /* QuestionOrderedStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderStrategy.swift; sourceTree = "<group>"; };
 		FB71684027B8D07800D9EA96 /* QuestionOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrder.swift; sourceTree = "<group>"; };
+		FB71684227B8D54200D9EA96 /* QuestionShuffledStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionShuffledStrategy.swift; sourceTree = "<group>"; };
+		FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderedStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */,
+				FB71684227B8D54200D9EA96 /* QuestionShuffledStrategy.swift */,
+				FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -239,7 +245,9 @@
 				FB71681127B52E5900D9EA96 /* ViewController.swift in Sources */,
 				FB71683027B53CBF00D9EA96 /* DataUtil.swift in Sources */,
 				FB71680D27B52E5900D9EA96 /* AppDelegate.swift in Sources */,
+				FB71684527B8D55100D9EA96 /* QuestionOrderedStrategy.swift in Sources */,
 				FB71682527B5316300D9EA96 /* GameSession.swift in Sources */,
+				FB71684327B8D54200D9EA96 /* QuestionShuffledStrategy.swift in Sources */,
 				FB71682727B5331100D9EA96 /* Question.swift in Sources */,
 				FB71684127B8D07800D9EA96 /* QuestionOrder.swift in Sources */,
 				FB71680F27B52E5900D9EA96 /* SceneDelegate.swift in Sources */,
