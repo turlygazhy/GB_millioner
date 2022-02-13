@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let gameVC = storyBoard.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+        Game.instance.gameSession?.showedQuestionIndex.addObserver(gameVC, options: [ObservableOptions.initial, .new, .old]) { value, prev in
+            gameVC.updateGameProgressLabel(questionIndex: value)
+            
+        }
         self.present(gameVC, animated: true, completion: nil)
     }
     

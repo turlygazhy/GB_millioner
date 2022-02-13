@@ -29,6 +29,7 @@
 		FB71684527B8D55100D9EA96 /* QuestionOrderedStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */; };
 		FB71684727B8DBE000D9EA96 /* NewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */; };
 		FB71684927B8DDB100D9EA96 /* QuestionCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */; };
+		FB7B09ED27B8EA6200AA3E78 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7B09EC27B8EA6200AA3E78 /* Observer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderedStrategy.swift; sourceTree = "<group>"; };
 		FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestionViewController.swift; sourceTree = "<group>"; };
 		FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
+		FB7B09EC27B8EA6200AA3E78 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				FB71681A27B52E5B00D9EA96 /* Info.plist */,
 				FB71682C27B533CE00D9EA96 /* Resourse */,
 				FB71683127B53CCD00D9EA96 /* Util */,
+				FB7B09EC27B8EA6200AA3E78 /* Observer.swift */,
 			);
 			path = GB_millioner;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				FB71683527B67F5000D9EA96 /* Record.swift in Sources */,
 				FB71681127B52E5900D9EA96 /* ViewController.swift in Sources */,
 				FB71683027B53CBF00D9EA96 /* DataUtil.swift in Sources */,
+				FB7B09ED27B8EA6200AA3E78 /* Observer.swift in Sources */,
 				FB71680D27B52E5900D9EA96 /* AppDelegate.swift in Sources */,
 				FB71684527B8D55100D9EA96 /* QuestionOrderedStrategy.swift in Sources */,
 				FB71682527B5316300D9EA96 /* GameSession.swift in Sources */,

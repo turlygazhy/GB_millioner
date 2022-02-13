@@ -5,16 +5,18 @@
 //  Created by Ерасыл Турлыгажы on 10.02.2022.
 //
 
-import Foundation
+import UIKit
 
 class GameSession {
     weak var delegate: GameSessionDelegate?
     var questions: [Question]
-    var showedQuestionIndex: Int
+    var showedQuestionIndex: Observable<Int>
+    var questionsCount: Int
     
     init(questions: [Question]) {
         self.questions = questions
-        self.showedQuestionIndex = 0
+        self.showedQuestionIndex = Observable(0)
+        self.questionsCount = questions.count
     }
     
     func startGame() {
@@ -24,38 +26,38 @@ class GameSession {
     func showQuestion(index: Int) {
         let question = questions[index]
         delegate?.showQuestion(question: question)
-        showedQuestionIndex = index
+        showedQuestionIndex.value = index
     }
     
     func handleAnswer(answer: String) {
-        let question = questions[showedQuestionIndex]
+        let question = questions[showedQuestionIndex.value]
         if answer == question.correctAnswer {
             showNextQuestion()
         } else {
-            delegate?.didEndGame(withResult: showedQuestionIndex, win: false)
+            delegate?.didEndGame(withResult: showedQuestionIndex.value, win: false)
         }
     }
     
     func showNextQuestion() {
         //todo check finished or not
-        showedQuestionIndex = showedQuestionIndex + 1
-        showQuestion(index: showedQuestionIndex)
+        showedQuestionIndex.value = showedQuestionIndex.value + 1
+        showQuestion(index: showedQuestionIndex.value)
     }
     
     func answer1Chosen() {
-        handleAnswer(answer: questions[showedQuestionIndex].answer1)
+        handleAnswer(answer: questions[showedQuestionIndex.value].answer1)
     }
     
     func answer2Chosen() {
-        handleAnswer(answer: questions[showedQuestionIndex].answer2)
+        handleAnswer(answer: questions[showedQuestionIndex.value].answer2)
     }
     
     func answer3Chosen() {
-        handleAnswer(answer: questions[showedQuestionIndex].answer3)
+        handleAnswer(answer: questions[showedQuestionIndex.value].answer3)
     }
     
     func answer4Chosen() {
-        handleAnswer(answer: questions[showedQuestionIndex].answer4)
+        handleAnswer(answer: questions[showedQuestionIndex.value].answer4)
     }
 }
 

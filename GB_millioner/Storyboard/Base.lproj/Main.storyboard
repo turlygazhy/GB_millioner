@@ -349,14 +349,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game progress label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwD-a4-JFk">
+                                <rect key="frame" x="10" y="64" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AcT-4G-fR2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wwD-a4-JFk" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="10" id="AGu-eR-y56"/>
                             <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="wQI-M1-jzG" secondAttribute="trailing" constant="10" id="YLB-j0-XPN"/>
+                            <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="wwD-a4-JFk" secondAttribute="trailing" constant="10" id="d6z-Or-3gG"/>
                             <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="pJO-Pf-1RY" secondAttribute="trailing" constant="10" id="hBx-5R-z8C"/>
                             <constraint firstItem="wQI-M1-jzG" firstAttribute="top" secondItem="AcT-4G-fR2" secondAttribute="top" constant="250" id="hde-gB-3Op"/>
                             <constraint firstItem="AcT-4G-fR2" firstAttribute="bottom" secondItem="pJO-Pf-1RY" secondAttribute="bottom" constant="20" id="kfa-8c-EnS"/>
+                            <constraint firstItem="wwD-a4-JFk" firstAttribute="top" secondItem="AcT-4G-fR2" secondAttribute="top" constant="20" id="pTQ-NX-Ted"/>
                             <constraint firstItem="wQI-M1-jzG" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="10" id="t1h-Cd-4Qe"/>
                             <constraint firstItem="pJO-Pf-1RY" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="10" id="tFf-Pn-drc"/>
                         </constraints>
@@ -367,6 +376,7 @@
                         <outlet property="answer2Button" destination="rv5-KY-jnd" id="FdL-xu-6Fj"/>
                         <outlet property="answer3Button" destination="CJr-TQ-3Zg" id="wTU-O9-mva"/>
                         <outlet property="answer4Button" destination="txg-rK-WA6" id="0bO-pv-CY2"/>
+                        <outlet property="gameProgressLabel" destination="wwD-a4-JFk" id="7a9-8d-6Du"/>
                         <outlet property="questionLabel" destination="wQI-M1-jzG" id="Edu-Pf-KSk"/>
                     </connections>
                 </viewController>
