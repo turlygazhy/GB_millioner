@@ -24,6 +24,7 @@
 		FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683627B6837400D9EA96 /* GameCaretaker.swift */; };
 		FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */; };
 		FB71683F27B8CBE300D9EA96 /* QuestionOrderStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */; };
+		FB71684127B8D07800D9EA96 /* QuestionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684027B8D07800D9EA96 /* QuestionOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FB71683627B6837400D9EA96 /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
 		FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderStrategy.swift; sourceTree = "<group>"; };
+		FB71684027B8D07800D9EA96 /* QuestionOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FB71682627B5331100D9EA96 /* Question.swift */,
 				FB71683427B67F5000D9EA96 /* Record.swift */,
 				FB71683627B6837400D9EA96 /* GameCaretaker.swift */,
+				FB71684027B8D07800D9EA96 /* QuestionOrder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				FB71680D27B52E5900D9EA96 /* AppDelegate.swift in Sources */,
 				FB71682527B5316300D9EA96 /* GameSession.swift in Sources */,
 				FB71682727B5331100D9EA96 /* Question.swift in Sources */,
+				FB71684127B8D07800D9EA96 /* QuestionOrder.swift in Sources */,
 				FB71680F27B52E5900D9EA96 /* SceneDelegate.swift in Sources */,
 				FB71683327B60CFF00D9EA96 /* GameResultViewController.swift in Sources */,
 				FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */,

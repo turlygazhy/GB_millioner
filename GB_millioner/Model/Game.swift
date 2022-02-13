@@ -14,7 +14,7 @@ class Game {
     private var records: [Record] = []
     
     var gameSession: GameSession?
-    var shuffleQuestions = false
+    var questionOrder = QuestionOrder.ordered
     
     private init() {}
     

@@ -14,10 +14,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playButtonPressed(_ sender: Any) {
-        var questionOrderStrategy: QuestionOrderStrategy = QuestionOrderedStrategy()
-        if Game.instance.shuffleQuestions {
-            questionOrderStrategy = QuestionShuffledStrategy()
-        }
+        let questionOrderStrategy: QuestionOrderStrategy = Game.instance.questionOrder.getStrategy()
         let questions = questionOrderStrategy.prepareQuestions(questions: DataUtil().getQuestions())
         Game.instance.gameSession = GameSession(questions: questions)
         
