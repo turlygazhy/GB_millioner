@@ -27,6 +27,8 @@
 		FB71684127B8D07800D9EA96 /* QuestionOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684027B8D07800D9EA96 /* QuestionOrder.swift */; };
 		FB71684327B8D54200D9EA96 /* QuestionShuffledStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684227B8D54200D9EA96 /* QuestionShuffledStrategy.swift */; };
 		FB71684527B8D55100D9EA96 /* QuestionOrderedStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */; };
+		FB71684727B8DBE000D9EA96 /* NewQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */; };
+		FB71684927B8DDB100D9EA96 /* QuestionCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		FB71684027B8D07800D9EA96 /* QuestionOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrder.swift; sourceTree = "<group>"; };
 		FB71684227B8D54200D9EA96 /* QuestionShuffledStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionShuffledStrategy.swift; sourceTree = "<group>"; };
 		FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderedStrategy.swift; sourceTree = "<group>"; };
+		FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestionViewController.swift; sourceTree = "<group>"; };
+		FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				FB71683427B67F5000D9EA96 /* Record.swift */,
 				FB71683627B6837400D9EA96 /* GameCaretaker.swift */,
 				FB71684027B8D07800D9EA96 /* QuestionOrder.swift */,
+				FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				FB71682027B5307800D9EA96 /* GameViewController.swift */,
 				FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */,
 				FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */,
+				FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB71682127B5307800D9EA96 /* GameViewController.swift in Sources */,
+				FB71684727B8DBE000D9EA96 /* NewQuestionViewController.swift in Sources */,
+				FB71684927B8DDB100D9EA96 /* QuestionCaretaker.swift in Sources */,
 				FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */,
 				FB71682327B5313F00D9EA96 /* Game.swift in Sources */,
 				FB71683F27B8CBE300D9EA96 /* QuestionOrderStrategy.swift in Sources */,

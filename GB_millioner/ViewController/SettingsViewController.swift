@@ -8,7 +8,7 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    
     @IBOutlet weak var orderSegment: UISegmentedControl!
     
     override func viewDidLoad() {
@@ -25,4 +25,8 @@ class SettingsViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    @IBAction func removeAllUsersQuestions(_ sender: Any) {
+        try? QuestionCaretaker().saveQuestions(questions: [])
+        dismiss(animated: true)
+    }
 }
