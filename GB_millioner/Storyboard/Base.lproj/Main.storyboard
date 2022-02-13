@@ -63,61 +63,71 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-Qj-TiF">
-                                <rect key="frame" x="15" y="729" width="149" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 1">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="answer1Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="pmM-vX-dAb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txg-rK-WA6">
-                                <rect key="frame" x="246" y="788" width="153" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 4">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="answer4Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="k2H-nt-lxN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-TQ-3Zg">
-                                <rect key="frame" x="15" y="788" width="153" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 3">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="answer3Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="eDs-7W-DRy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-KY-jnd">
-                                <rect key="frame" x="247" y="729" width="152" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 2">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="answer2Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="UUK-fu-lKO"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJO-Pf-1RY">
+                                <rect key="frame" x="10" y="754" width="394" height="88"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ur7-dn-hE4">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pg7-Qj-TiF">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 1">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answer1Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="pmM-vX-dAb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CJr-TQ-3Zg">
+                                                <rect key="frame" x="0.0" y="44" width="197" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 3">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answer3Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="eDs-7W-DRy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-I1-CSf">
+                                        <rect key="frame" x="197" y="0.0" width="197" height="88"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv5-KY-jnd">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 2">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answer2Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="UUK-fu-lKO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txg-rK-WA6">
+                                                <rect key="frame" x="0.0" y="44" width="197" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="ANSWER 4">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="answer4Pressed:" destination="K1h-ng-q0H" eventType="touchUpInside" id="k2H-nt-lxN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AcT-4G-fR2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AcT-4G-fR2" firstAttribute="bottom" secondItem="CJr-TQ-3Zg" secondAttribute="bottom" constant="30" id="Esg-Eg-Twd"/>
-                            <constraint firstItem="CJr-TQ-3Zg" firstAttribute="top" secondItem="Pg7-Qj-TiF" secondAttribute="bottom" constant="15" id="HDj-4Q-D3I"/>
-                            <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="txg-rK-WA6" secondAttribute="trailing" constant="15" id="Khh-11-eMj"/>
-                            <constraint firstItem="AcT-4G-fR2" firstAttribute="bottom" secondItem="txg-rK-WA6" secondAttribute="bottom" constant="30" id="PxP-Wn-Y6X"/>
                             <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="wQI-M1-jzG" secondAttribute="trailing" constant="10" id="YLB-j0-XPN"/>
-                            <constraint firstItem="CJr-TQ-3Zg" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="15" id="Zc7-LU-a5g"/>
-                            <constraint firstItem="Pg7-Qj-TiF" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="15" id="fED-L3-6TM"/>
-                            <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="rv5-KY-jnd" secondAttribute="trailing" constant="15" id="gO1-2e-1xK"/>
+                            <constraint firstItem="AcT-4G-fR2" firstAttribute="trailing" secondItem="pJO-Pf-1RY" secondAttribute="trailing" constant="10" id="hBx-5R-z8C"/>
                             <constraint firstItem="wQI-M1-jzG" firstAttribute="top" secondItem="AcT-4G-fR2" secondAttribute="top" constant="250" id="hde-gB-3Op"/>
-                            <constraint firstItem="txg-rK-WA6" firstAttribute="top" secondItem="rv5-KY-jnd" secondAttribute="bottom" constant="15" id="hfR-9M-qpI"/>
+                            <constraint firstItem="AcT-4G-fR2" firstAttribute="bottom" secondItem="pJO-Pf-1RY" secondAttribute="bottom" constant="20" id="kfa-8c-EnS"/>
                             <constraint firstItem="wQI-M1-jzG" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="10" id="t1h-Cd-4Qe"/>
+                            <constraint firstItem="pJO-Pf-1RY" firstAttribute="leading" secondItem="AcT-4G-fR2" secondAttribute="leading" constant="10" id="tFf-Pn-drc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VzH-Y4-9MO"/>
