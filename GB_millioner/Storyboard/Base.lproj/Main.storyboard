@@ -8,6 +8,74 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="GKA-56-uVr">
+            <objects>
+                <viewController id="kJS-K7-RuH" customClass="SettingsViewController" customModule="GB_millioner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i9J-uV-6iN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-A7-5ih">
+                                <rect key="frame" x="10" y="10" width="394" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Порядок вопросов:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flj-BY-PsH">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gz0-Yc-f31">
+                                        <rect key="frame" x="0.0" y="40" width="394" height="32"/>
+                                        <segments>
+                                            <segment title="Последовательно"/>
+                                            <segment title="Случайно"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRw-6b-jXg">
+                                <rect key="frame" x="10" y="767" width="394" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR3-Yh-nhV">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelPressed:" destination="kJS-K7-RuH" eventType="touchUpInside" id="FXy-Sk-g0c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oge-LY-D46">
+                                        <rect key="frame" x="197" y="0.0" width="197" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                        <connections>
+                                            <action selector="okPressed:" destination="kJS-K7-RuH" eventType="touchUpInside" id="mdf-FC-umv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qlg-fo-cdK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2bN-A7-5ih" firstAttribute="top" secondItem="qlg-fo-cdK" secondAttribute="top" constant="10" id="3Ik-C6-8lP"/>
+                            <constraint firstItem="uRw-6b-jXg" firstAttribute="leading" secondItem="qlg-fo-cdK" secondAttribute="leading" constant="10" id="8vS-wy-z8T"/>
+                            <constraint firstItem="qlg-fo-cdK" firstAttribute="trailing" secondItem="2bN-A7-5ih" secondAttribute="trailing" constant="10" id="JfO-tz-boD"/>
+                            <constraint firstItem="qlg-fo-cdK" firstAttribute="bottom" secondItem="uRw-6b-jXg" secondAttribute="bottom" constant="10" id="k9I-ab-fnk"/>
+                            <constraint firstItem="2bN-A7-5ih" firstAttribute="leading" secondItem="qlg-fo-cdK" secondAttribute="leading" constant="10" id="nh2-s3-Rg3"/>
+                            <constraint firstItem="qlg-fo-cdK" firstAttribute="trailing" secondItem="uRw-6b-jXg" secondAttribute="trailing" constant="10" id="tvU-2P-yQb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RKN-4d-rIA"/>
+                    <connections>
+                        <outlet property="orderSegment" destination="gz0-Yc-f31" id="NMC-8l-xcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vez-Lb-REe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-759" y="96"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,8 +84,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-DI-a3y">
-                                <rect key="frame" x="110.5" y="320" width="193.5" height="168"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gwc-DI-a3y">
+                                <rect key="frame" x="110.5" y="310" width="193.5" height="188"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9f1-u3-fVQ">
                                         <rect key="frame" x="0.0" y="0.0" width="193.5" height="56"/>
@@ -30,18 +98,21 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d3-P8-8lV">
-                                        <rect key="frame" x="0.0" y="56" width="193.5" height="56"/>
+                                        <rect key="frame" x="0.0" y="66" width="193.5" height="56"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SCORES">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etp-eA-hwb">
-                                        <rect key="frame" x="0.0" y="112" width="193.5" height="56"/>
+                                        <rect key="frame" x="0.0" y="132" width="193.5" height="56"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SETTINGS">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="kJS-K7-RuH" kind="show" id="PAo-oh-kyQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

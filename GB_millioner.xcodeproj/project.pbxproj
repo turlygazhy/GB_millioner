@@ -22,6 +22,7 @@
 		FB71683327B60CFF00D9EA96 /* GameResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */; };
 		FB71683527B67F5000D9EA96 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683427B67F5000D9EA96 /* Record.swift */; };
 		FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683627B6837400D9EA96 /* GameCaretaker.swift */; };
+		FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultViewController.swift; sourceTree = "<group>"; };
 		FB71683427B67F5000D9EA96 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		FB71683627B6837400D9EA96 /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
+		FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				FB71681027B52E5900D9EA96 /* ViewController.swift */,
 				FB71682027B5307800D9EA96 /* GameViewController.swift */,
 				FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */,
+				FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				FB71682727B5331100D9EA96 /* Question.swift in Sources */,
 				FB71680F27B52E5900D9EA96 /* SceneDelegate.swift in Sources */,
 				FB71683327B60CFF00D9EA96 /* GameResultViewController.swift in Sources */,
+				FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
