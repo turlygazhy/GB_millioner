@@ -23,6 +23,7 @@
 		FB71683527B67F5000D9EA96 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683427B67F5000D9EA96 /* Record.swift */; };
 		FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683627B6837400D9EA96 /* GameCaretaker.swift */; };
 		FB71683C27B8BA6000D9EA96 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */; };
+		FB71683F27B8CBE300D9EA96 /* QuestionOrderStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FB71683427B67F5000D9EA96 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		FB71683627B6837400D9EA96 /* GameCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCaretaker.swift; sourceTree = "<group>"; };
 		FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOrderStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		FB71680B27B52E5900D9EA96 /* GB_millioner */ = {
 			isa = PBXGroup;
 			children = (
+				FB71683D27B8CBC900D9EA96 /* Strategy */,
 				FB71682927B5332F00D9EA96 /* System */,
 				FB71682827B5331900D9EA96 /* Model */,
 				FB71682B27B5338300D9EA96 /* ViewController */,
@@ -143,6 +146,14 @@
 				FB71682F27B53CBF00D9EA96 /* DataUtil.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		FB71683D27B8CBC900D9EA96 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				FB71683E27B8CBE300D9EA96 /* QuestionOrderStrategy.swift */,
+			);
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 				FB71682127B5307800D9EA96 /* GameViewController.swift in Sources */,
 				FB71683727B6837400D9EA96 /* GameCaretaker.swift in Sources */,
 				FB71682327B5313F00D9EA96 /* Game.swift in Sources */,
+				FB71683F27B8CBE300D9EA96 /* QuestionOrderStrategy.swift in Sources */,
 				FB71683527B67F5000D9EA96 /* Record.swift in Sources */,
 				FB71681127B52E5900D9EA96 /* ViewController.swift in Sources */,
 				FB71683027B53CBF00D9EA96 /* DataUtil.swift in Sources */,

@@ -14,7 +14,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playButtonPressed(_ sender: Any) {
-        Game.instance.gameSession = GameSession(questions: DataUtil().getQuestions())
+        var questionOrderStrategy: QuestionOrderStrategy = QuestionOrderedStrategy()
+        if Game.instance.shuffleQuestions {
+            questionOrderStrategy = QuestionShuffledStrategy()
+        }
+        let questions = questionOrderStrategy.prepareQuestions(questions: DataUtil().getQuestions())
+        Game.instance.gameSession = GameSession(questions: questions)
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let gameVC = storyBoard.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
