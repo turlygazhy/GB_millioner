@@ -7,7 +7,7 @@
 </p>
 
 <p align="row">
-<img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
+<img src= "https://github.com/turlygazhy/GB_millioner/blob/main/GB_millioner/System/Assets.xcassets/app-screen-3.imageset/app-screen-3.png" width="400" >
 <img src= "https://media.giphy.com/media/HYOlBKJBqgAfe/giphy.gif" width="400" >
 </p>
 
