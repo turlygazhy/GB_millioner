@@ -76,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FB71680B27B52E5900D9EA96 /* GB_millioner */,
+				FB7B09F227BCF69800AA3E78 /* README.md */,
 				FB71680A27B52E5900D9EA96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,7 +105,6 @@
 				FB71682C27B533CE00D9EA96 /* Resourse */,
 				FB71683127B53CCD00D9EA96 /* Util */,
 				FB7B09EC27B8EA6200AA3E78 /* Observer.swift */,
-				FB7B09F227BCF69800AA3E78 /* README.md */,
 			);
 			path = GB_millioner;
 			sourceTree = "<group>";
