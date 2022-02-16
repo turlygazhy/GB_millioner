@@ -93,7 +93,11 @@
 				FB71683D27B8CBC900D9EA96 /* Strategy */,
 				FB71682927B5332F00D9EA96 /* System */,
 				FB71682827B5331900D9EA96 /* Model */,
-				FB71682B27B5338300D9EA96 /* ViewController */,
+				FB7B09EE27BCF59D00AA3E78 /* Game */,
+				FB7B09EF27BCF5C500AA3E78 /* GameResult */,
+				FB7B09F027BCF61E00AA3E78 /* Settings */,
+				FB7B09F127BCF62D00AA3E78 /* NewQuestion */,
+				FB71682B27B5338300D9EA96 /* MainScreen */,
 				FB71682A27B5336700D9EA96 /* Storyboard */,
 				FB71681A27B52E5B00D9EA96 /* Info.plist */,
 				FB71682C27B533CE00D9EA96 /* Resourse */,
@@ -136,16 +140,12 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		FB71682B27B5338300D9EA96 /* ViewController */ = {
+		FB71682B27B5338300D9EA96 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
 				FB71681027B52E5900D9EA96 /* ViewController.swift */,
-				FB71682027B5307800D9EA96 /* GameViewController.swift */,
-				FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */,
-				FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */,
-				FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */,
 			);
-			path = ViewController;
+			path = MainScreen;
 			sourceTree = "<group>";
 		};
 		FB71682C27B533CE00D9EA96 /* Resourse */ = {
@@ -172,6 +172,38 @@
 				FB71684427B8D55100D9EA96 /* QuestionOrderedStrategy.swift */,
 			);
 			path = Strategy;
+			sourceTree = "<group>";
+		};
+		FB7B09EE27BCF59D00AA3E78 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				FB71682027B5307800D9EA96 /* GameViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		FB7B09EF27BCF5C500AA3E78 /* GameResult */ = {
+			isa = PBXGroup;
+			children = (
+				FB71683227B60CFF00D9EA96 /* GameResultViewController.swift */,
+			);
+			path = GameResult;
+			sourceTree = "<group>";
+		};
+		FB7B09F027BCF61E00AA3E78 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FB71683B27B8BA6000D9EA96 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FB7B09F127BCF62D00AA3E78 /* NewQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */,
+			);
+			path = NewQuestion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
