@@ -47,9 +47,8 @@ class GameViewController: UIViewController {
         if gameProgressLabel == nil {
             return
         }
-        gameProgressLabel.text = "Question #\(questionIndex+1) shown from \(Game.instance.gameSession!.questionsCount)"
+        gameProgressLabel.text = "\(questionIndex+1) / \(Game.instance.gameSession!.questionsCount)"
     }
-    
 }
 
 extension GameViewController: GameSessionDelegate {

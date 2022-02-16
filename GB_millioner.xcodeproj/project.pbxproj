@@ -92,6 +92,11 @@
 		FB71680B27B52E5900D9EA96 /* GB_millioner */ = {
 			isa = PBXGroup;
 			children = (
+				FB71682227B5313F00D9EA96 /* Game.swift */,
+				FB71682427B5316300D9EA96 /* GameSession.swift */,
+				FB71683627B6837400D9EA96 /* GameCaretaker.swift */,
+				FB71684027B8D07800D9EA96 /* QuestionOrder.swift */,
+				FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */,
 				FB71683D27B8CBC900D9EA96 /* Strategy */,
 				FB71682927B5332F00D9EA96 /* System */,
 				FB71682827B5331900D9EA96 /* Model */,
@@ -112,13 +117,8 @@
 		FB71682827B5331900D9EA96 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FB71682227B5313F00D9EA96 /* Game.swift */,
-				FB71682427B5316300D9EA96 /* GameSession.swift */,
 				FB71682627B5331100D9EA96 /* Question.swift */,
 				FB71683427B67F5000D9EA96 /* Record.swift */,
-				FB71683627B6837400D9EA96 /* GameCaretaker.swift */,
-				FB71684027B8D07800D9EA96 /* QuestionOrder.swift */,
-				FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
