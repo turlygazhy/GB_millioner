@@ -58,6 +58,7 @@
 		FB71684627B8DBE000D9EA96 /* NewQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewQuestionViewController.swift; sourceTree = "<group>"; };
 		FB71684827B8DDB100D9EA96 /* QuestionCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCaretaker.swift; sourceTree = "<group>"; };
 		FB7B09EC27B8EA6200AA3E78 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		FB7B09F227BCF69800AA3E78 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 				FB71682C27B533CE00D9EA96 /* Resourse */,
 				FB71683127B53CCD00D9EA96 /* Util */,
 				FB7B09EC27B8EA6200AA3E78 /* Observer.swift */,
+				FB7B09F227BCF69800AA3E78 /* README.md */,
 			);
 			path = GB_millioner;
 			sourceTree = "<group>";
