@@ -10,17 +10,19 @@ import Foundation
 class DataUtil {
     
     func getQuestions() -> [Question] {
+        let usersQuestions = try? QuestionCaretaker().loadQuestions()
         if let fileLocation = Bundle.main.url(forResource: "questions", withExtension: "json") {
             do{
                 let data = try Data(contentsOf: fileLocation)
                 print(data)
                 let jsonDecoder = JSONDecoder()
-                let dataFromJson = try jsonDecoder.decode([Question].self, from: data)
+                var dataFromJson: [Question] = try jsonDecoder.decode([Question].self, from: data)
+                dataFromJson.append(contentsOf: usersQuestions!)
                 return dataFromJson
             } catch {
                 print(error)
             }
         }
-        return [Question]() //todo what should be here
+        return usersQuestions!
     }
 }

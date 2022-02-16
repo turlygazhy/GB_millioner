@@ -14,6 +14,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var answer2Button: UIButton!
     @IBOutlet weak var answer3Button: UIButton!
     @IBOutlet weak var answer4Button: UIButton!
+    @IBOutlet weak var gameProgressLabel: UILabel!
     
     var gameSession: GameSession?
     
@@ -40,6 +41,13 @@ class GameViewController: UIViewController {
     
     @IBAction func answer4Pressed(_ sender: Any) {
         gameSession?.answer4Chosen()
+    }
+    
+    func updateGameProgressLabel(questionIndex: Int) {
+        if gameProgressLabel == nil {
+            return
+        }
+        gameProgressLabel.text = "Question #\(questionIndex+1) shown from \(Game.instance.gameSession!.questionsCount)"
     }
     
 }
