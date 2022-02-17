@@ -10,7 +10,7 @@ import UIKit
 class GameResultViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
-    @IBOutlet weak var correctAnswersCountLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var win = false
     var correctAnswersCount = 0
@@ -19,14 +19,14 @@ class GameResultViewController: UIViewController {
         super.viewDidLoad()
         
         if win {
-            resultLabel.text = "You win!"
+            resultLabel.text = "You win"
             resultLabel.textColor = .green
         } else {
-            resultLabel.text = "You lose!"
+            resultLabel.text = "You lose"
             resultLabel.textColor = .red
         }
         
-        correctAnswersCountLabel.text = correctAnswersCount.description
+        scoreLabel.text = "Your score is  \(correctAnswersCount.description)"
     }
 
 }
